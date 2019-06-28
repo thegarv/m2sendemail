@@ -1,0 +1,100 @@
+<div class="container">
+    <form class="form-horizontal" method="post" enctype="multipart/form-data" action=<?php echo $this->getUrl("modulename/index/index")?>>
+        <div class="form-group">    
+            <div class="row">
+                <div class="col-sm-12">
+                    <label for="">Name</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <input class="form-control" type="text" id="" name="fname" placeholder="first name">
+                </div>
+                <div class="col-sm-6">
+                    <input class="form-control" type="text" id="" name="lname" placeholder="last name">
+                </div>          
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="">Address</label>
+            <textarea class="col-sm-12 form-control" rows="3" placeholder="" name="address"></textarea>
+        </div>
+
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-5">
+                    <label for="">City</label>
+                    <input class="form-control" type="text" name="city" id="" placeholder="">
+                </div>
+                <div class="col-sm-4">
+                    <label for="">State/Province</label>
+                    <input class="form-control" type="text" name="state" id="" placeholder="">
+                </div>
+                <div class="col-sm-3">
+                    <label for="">Zip Code</label>
+                    <input class="form-control" type="text" name="zipcode" id="" placeholder="">
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-8">
+                    <label for="">Phone</label>
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <input class="form-control" type="text" id="" name="phone" placeholder="">
+                            </div>  
+                            <div class="col-sm-2 phone-or">
+                                <span>OR</span>
+                            </div>  
+                            <div class="col-sm-5">
+                                <input class="form-control" type="text" id="" placeholder="">
+                            </div>  
+                        </div>
+                </div>
+                <div class="col-sm-4">
+                    <label for="">Email</label>
+                    <input class="form-control" type="email" id="email" name="email" placeholder="">
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-2">
+                    <label for="">Project Type :</label>
+                </div>
+                <div class="col-sm-10">
+                    <label class="checkbox-inline"> 
+                        <input type="checkbox" id="" value="One1" name="project_type[]"> <span>Residential</span> 
+                    </label> 
+                    <label class="checkbox-inline"> 
+                        <input type="checkbox" id="" value="One2" name="project_type[]"> <span>Commercial</span>
+                    </label>        
+                </div>      
+            </div>
+        </div>
+
+        <div class="col-md-4 col-xs-12">
+            <input accept="image/*" name="upload_document" type="file" value="" />
+        </div>
+
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-2">
+                    <label for="">Comment :</label>
+                </div>
+                <div class="col-sm-10">
+                    <textarea class="form-control comment" rows="3" name="comment" placeholder="additional information about your project"></textarea>  
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+                <button type="submit" class="btn btn-primary">SUBMIT</button>
+        </div>
+
+    </form>
+</div>
